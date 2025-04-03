@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html>
-<head><title>Panel</title></head>
+<head>
+    <title>Panel</title>
+</head>
 <body>
-<h2>Bienvenido, {{ usuario }}</h2>
-<p>Este es tu panel privado.</p>
-<a href="/logout">Cerrar sesión</a>
+    <h1>Bienvenido, {{ usuario }}!</h1>
+    <p><a href="{{ url_for('registro') }}">Registrar nuevo vehículo</a></p>
+    <p><a href="{{ url_for('logout') }}">Cerrar sesión</a></p>
 </body>
 </html>
